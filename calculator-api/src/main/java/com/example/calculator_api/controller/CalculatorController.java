@@ -8,6 +8,10 @@ import org.springframework.web.bind.annotation.*;
 
 @RestController
 @RequestMapping("/api/calculator")
+@CrossOrigin(
+        origins = "https://calculators-api-tau.vercel.app",
+        methods = {RequestMethod.POST, RequestMethod.OPTIONS}
+)
 public class CalculatorController {
 
     @PostMapping("/add")
