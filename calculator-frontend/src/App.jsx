@@ -13,7 +13,7 @@ function App() {
 
     try {
       const response = await fetch(
-          `https://calculator-api-production-5187.up.railway.app/api/calculator/${operation}`,
+          `/api/calculator/${operation}`,
           {
             method: "POST",
             headers: {
